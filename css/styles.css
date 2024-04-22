@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MedievalSharp", cursive;
+}
+
+body {
+    background-image: url(../img/back2.jpg);
+    background-size: cover;
+}
+
+body h1 {
+    padding-top: 15px;
+    font-size: 50px;    
+    text-align: center;
+    color: #c28540;
+    text-shadow: 2px 2px 4px #ffffff94;
+}
+
+body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iniciar {
+    position: fixed;
+    left: 45%;
+    right: 45%;
+    top: 45%;
+    font-size: 30px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000c2;
+    color: #c28540;
+    box-shadow: 2px 2px 8px 8px #ffffff94;
+    transition: 0.7s;
+}
+
+#boton-proximamente {
+    position: fixed;
+    left: 90%;
+    right: 2%;
+    top: 1%;
+    font-size: 30px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000c2;
+    color: #c28540;
+    box-shadow: 2px 2px 8px 8px #ffffff94;
+    transition: 0.7s;
+}
+
+#iniciar:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#boton-proximamente:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#iniciar p {
+    font-size: 30px;
+}
+
+#opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.tarjeta {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+.tarjeta:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: 0.7s;    
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta h3 {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tarjeta:hover h3 {
+    opacity: 1;
+    text-shadow: 3px 3px black;}
+
+.tarjeta-final {
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tarjeta-final img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 2px solid #000;
+}
+
+.tarjeta-final h3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta-final p {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.boton-agregar, .boton-elegir {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    transition: 0.7s;
+}
+
+.boton-agregar:hover {
+    box-shadow: 10px 10px 10px black;
+    background-color: #13772c;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.boton-elegir:hover {
+    box-shadow: 10px 10px 10px black;
+    background-color: #bb3131;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+#boton-carreta {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 5px 5px;
+    background-color: #0000008a;
+    color: #c28540;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+#boton-carreta:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #ffffffd2;
+    background-color: #ffffff70;
+    box-shadow: 6px 6px #0000008a;
+    transition: 0.7s;
+}
+
+

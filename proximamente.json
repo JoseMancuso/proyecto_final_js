@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Palomino Cyrdanés",
+        "imagen": "../img/cyrdanes.jpg"
+    },
+    {
+        "nombre": "Pony Hyobita",
+        "imagen": "../img/hyobita.jpg"
+    },
+    {
+        "nombre": "Frisón Telaramita",
+        "imagen": "../img/telaramita.jpg"
+    },
+    {
+        "nombre": "Lucero de Auxerre",
+        "imagen": "../img/auxerre.jpg"
+    },
+    {
+        "nombre": "Ehlerita",
+        "imagen": "../img/ehlerita.jpg"
+    }
+]

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MedievalSharp", cursive;
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/back2.jpg);
+    background-size: cover;
+}
+
+body h1 {
+    padding-top: 15px;
+    font-size: 40px;    
+    text-align: center;
+}
+
+#boton-caballo {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 5px 5px;
+    background-color: #0000008a;
+    color: #c28540;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+#boton-caballo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #ffffff70;
+    box-shadow: 6px 6px #0000008a;
+    transition: 0.7s;
+}
+
+#vaciar-carrito {
+    position: fixed;
+    bottom: 40px;
+    right: 170px;
+    padding: 5px 5px;
+    background-color: #0000008a;
+    color: #c28540;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+#vaciar-carrito:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #ffffff70;
+    box-shadow: 6px 6px #0000008a;
+    transition: 0.7s;
+}
+
+#lista-caballos {
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+}
+
+#total {
+    position: fixed;
+    bottom: 40px;
+    right: 40%;
+    left: 40%;
+    height: 60px;
+    width: 20%;
+    padding: 5px 5px;
+    background-color: #ffffffc0;
+    color: black;
+}
+
+#total {
+    text-align: center;
+    font-size: larger;
+    color: #ce1919;
+}
+
+#botonEliminar {
+    background-color: #c28540;
+    margin: 15px;
+}
