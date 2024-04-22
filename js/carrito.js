@@ -100,8 +100,3 @@ function confirmarVaciado() {
         }
     });
 }
-
-
-
-
-

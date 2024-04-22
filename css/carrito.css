@@ -82,9 +82,11 @@ body h1 {
 }
 
 #total {
-    text-align: center;
-    font-size: larger;
+    display: flex;
+    font-size: 150%;
     color: #ce1919;
+    align-items: center;
+    justify-content: center;
 }
 
 #botonEliminar {

@@ -98,6 +98,7 @@ const preciosCaballos = {
 };
 
 // Definiciones globales //
+
 const contenedor = document.querySelector('#opciones');
 let seleccionRaza = "";
 let seleccionTier = "";
@@ -120,6 +121,10 @@ function ocultarBoton() {
     const button = document.querySelector('#iniciar');
     if (button) {
         button.style.display = 'none';
+    }
+    const otherButton = document.querySelector('#boton-proximamente');
+    if (otherButton) {
+        otherButton.style.display = 'none';
     }
 }
 
@@ -183,6 +188,8 @@ function crearTarjetasEdades() {
     }
 }
 
+// Funciones de navegación para modales de SweetAlert //
+
 function mostrarSwal() {
     Swal.fire({
         background: '#ffffffd2',
@@ -220,6 +227,8 @@ function mostrarSwal() {
         )
     });
 }
+
+// Armado de la tarjeta del caballo seleccionado - cálculo del precio - funciones para agregarlo a la carreta o descartarlo //
 
 function crearTarjetaFinal() {
     ocultarTarjetas();
@@ -275,7 +284,7 @@ function seleccionarEdad(event) {
     crearTarjetaFinal();
 }
 
-// Funcion para boton "iniciar". Pretendo sacarlo para la entrega final.
+// Funcion para boton "iniciar" //
 
 document.querySelector('#iniciar').addEventListener('click', function() {
     cambiarTitulo("Seleccione la raza del caballo");
@@ -338,4 +347,3 @@ function irProximamente() {
 
 const botonProximamente = document.getElementById('boton-proximamente');
 botonProximamente.addEventListener('click', irProximamente)
-

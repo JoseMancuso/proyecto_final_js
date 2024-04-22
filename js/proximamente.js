@@ -1,8 +1,10 @@
+// Carga de los objetos en el .json y muestra de los mismos en el DOM //
+
 document.addEventListener('DOMContentLoaded', mostrarProximos);
 
 function mostrarProximos(){
 fetch('../proximamente.json')
-.then(response => response.json())
+.then(res => res.json())
 .then(data => {
     const proximos = document.getElementById('razasCaballos');
     data.forEach(caballo => {
@@ -18,10 +20,11 @@ fetch('../proximamente.json')
 .catch(error => console.error('Error al cargar los caballos:', error));
 }
 
+// Funciones para botones de navegación //
+
 function volverInicio() {
     window.location.href = '../index.html';
 }
 
 const botonVolver = document.getElementById('boton-volver');
 botonVolver.addEventListener('click', volverInicio)
-
